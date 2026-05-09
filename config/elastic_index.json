@@ -1,0 +1,41 @@
+{
+  "settings": {
+    "analysis": {
+      "analyzer": {
+        "english_with_stopwords": {
+          "type": "standard",
+          "stopwords": "_english_"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "url": { "type": "keyword" },
+      "source_name": { "type": "keyword" },
+      "source_type": { "type": "keyword" },
+      "title": {
+        "type": "text",
+        "analyzer": "english_with_stopwords",
+        "fields": {
+          "keyword": { "type": "keyword", "ignore_above": 256 }
+        }
+      },
+      "content": {
+        "type": "text",
+        "analyzer": "english_with_stopwords"
+      },
+      "content_embedding": { "type": "sparse_vector" },
+      "published_at": { "type": "date", "ignore_malformed": true },
+      "crawled_at": { "type": "date", "ignore_malformed": true },
+      "language": { "type": "keyword" },
+      "content_hash": { "type": "keyword" },
+      "crawler": {
+        "properties": {
+          "crawl_id": { "type": "keyword" },
+          "status": { "type": "keyword" }
+        }
+      }
+    }
+  }
+}

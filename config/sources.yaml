@@ -1,0 +1,33 @@
+sources:
+  - name: BMRCL
+    type: official
+    url: https://english.bmrc.co.in/press-releases
+    priority: 1.0
+  - name: BBMP
+    type: official
+    url: https://bbmp.gov.in
+    priority: 1.0
+  - name: BBMP Circulars
+    type: official
+    url: https://bbmp.gov.in/en/circulars
+    priority: 1.0
+  - name: BWSSB
+    type: official
+    url: https://bwssb.karnataka.gov.in
+    priority: 1.0
+  - name: BWSSB Press Releases
+    type: official
+    url: https://bwssb.karnataka.gov.in/info-2/Press+Release/en
+    priority: 1.0
+  - name: Deccan Herald Bengaluru
+    type: news
+    url: https://www.deccanherald.com/india/karnataka/bengaluru
+    priority: 0.75
+  - name: Times of India Bengaluru
+    type: news
+    url: https://timesofindia.indiatimes.com/city/bengaluru
+    priority: 0.7
+  - name: BMRCL Official X
+    type: official_social
+    url: https://x.com/OfficialBMRCL
+    priority: 0.9
